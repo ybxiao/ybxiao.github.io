@@ -1,1 +1,29 @@
-<P1>hello world</P1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Switcher</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Click a Button to Change the Image</h1>
+    
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="changeImage('image1')">Image 1</button>
+      <button onclick="changeImage('image2')">Image 2</button>
+      <button onclick="changeImage('image3')">Image 3</button>
+      <button onclick="changeImage('image4')">Image 4</button>
+    </div>
+
+    <!-- Image Display Area -->
+    <div class="image-container">
+      <img id="imageDisplay" src="image1.jpg" alt="Image" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
